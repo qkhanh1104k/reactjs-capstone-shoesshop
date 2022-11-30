@@ -1,0 +1,129 @@
+@import '../themes/variable' ;
+// .carousel__wrap {
+//     height: 500px;
+//     background-image: url(../../img/giay.png);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: bottom;
+
+
+//     .carousel {
+//         .carousel-indicators {
+//             & [data-bs-target] {
+//                 width: 13px;
+//                 height: 13px;
+//                 border-radius: 50%;
+//                 border: 1px solid rgba($color: #000000, $alpha: 13%);
+//                 margin: 0 8.5px;
+//             }
+//         }
+
+//         .carousel-inner {
+//             .carousel-item {
+//                 .carousel-item__wrap {
+//                     display: flex;
+//                     align-items: center;
+//                     justify-content: center;
+//                     padding: 0 40px;
+
+//                     .carousel__item-img {
+//                         flex-basis: 74%;
+
+//                         img {
+//                             // width: 821px;
+//                             // height: 392px;
+//                             max-width: 100%;
+//                         }
+//                     }
+
+//                     .carousel__item-detail {
+//                         flex-basis: 26%;
+
+//                         h1 {
+//                             @include text($size: $text-40, $weight: $text-light);
+//                         }
+
+//                         p {
+//                             @include text($size: $text-20, $weight: $text-light);
+//                         }
+
+//                         button {
+//                             @include text($text-20, $text-light, $text-c1-white);
+//                             padding: 13px 35px;
+//                             outline: none;
+//                             border: none;
+//                             background-color: $bg-c1-btn;
+//                         }
+//                     }
+//                 }
+//             } 
+
+//         }
+
+//         .carousel-control-prev {
+//             img {
+//                 position: absolute;
+//                 left: -20px;
+//             }
+//         }
+
+//         .carousel-control-next {
+//             img {
+//                 position: absolute;
+//                 right: -20px;
+//             }
+//         }
+//     }
+// } 
+
+.p4-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    .p4-footer_buynow {
+      position: relative;
+      background-color: #E1B067;
+      width: 175px;
+      height: 64px;
+      font-weight: 200;
+      font-size: 24px;
+      line-height: 29px;
+      .buynow {
+        position: absolute;
+        left: 33px;
+        top: 15px;
+      }
+    }
+  
+    .p4-footer_price {
+      position: relative;
+      background-color: #DEDDDC;
+      width: 175px;
+      height: 64px;
+      font-weight: 200;
+      font-size: 24px;
+      line-height: 29px;
+      .price {
+        position: absolute;
+        left: 40px;
+        top: 15px;
+      }
+  
+    }
+  }
+  .ProductFeature {
+    background: linear-gradient(#F21299 , #1B02B5);
+    width: 698px;
+    height: 74px;
+    top: 44px;
+    left: -4px;
+    color: white;
+    margin: 20px 0;
+    .ProductText {
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 48px;
+       padding: 20px;
+    }
+  }

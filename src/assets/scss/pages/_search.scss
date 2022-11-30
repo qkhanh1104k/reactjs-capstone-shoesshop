@@ -1,0 +1,122 @@
+.search {
+  padding: 70px 44px;
+  font-family: "Roboto", sans-serif;
+  .search-bar {
+    p {
+      @include text($text-18, $text-medium, $text-c3-dark);
+    }
+
+    input {
+      margin-top: 5px;
+      margin-right: 37px;
+      background: $bg-input-search;
+      border: none;
+      border-radius: $br-inp-search;
+      padding: 16px 12px 14px 14px;
+      width: 443px;
+      @include text($text-16, $text-regular, $text-inp-search);
+    }
+    .btnSearch {
+      @include button(121px, 48px, $bg-btn-cart-edit, $br-btn-search);
+      @include text($text-14, $text-medium, $text-c1-white);
+      text-transform: uppercase;
+    }
+  }
+
+  .search-title {
+    display: flex;
+    align-items: center;
+    margin-top: 45px;
+    font-family: "Inter", sans-serif;
+
+    .search-title__text {
+      position: absolute;
+      z-index: 1;
+      @include text($text-40, $text-regular, $text-c1-white);
+      padding-left: 30px;
+    }
+    .search-title__bg {
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 74px;
+      background: $bg-title-search-gradient;
+    }
+  }
+
+  .search-result {
+    margin-top: 27px;
+
+    p {
+      @include text($text-18, $text-medium, $text-c3-dark);
+    }
+    .filter {
+      margin-top: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: $bg-input-search;
+      width: 443px;
+      height: 54px;
+      padding: 16px 12px 14px 14px;
+
+      label {
+        @include text($text-16, $text-regular, $text-inp-search);
+      }
+
+      .checkbox__container {
+        display: block;
+        position: relative;
+        cursor: pointer;
+
+        // hide default checkbox
+        input#desc {
+          position: relative;
+          width: 0;
+          height: 0;
+          cursor: pointer;
+
+          &::after {
+            content: "▽";
+            position: absolute;
+            top: -37px;
+            left: -42px;
+            font-size: 45px;
+            color: rgba(33, 33, 33, 0.2);
+          }
+        }
+
+        input#asc {
+          position: relative;
+          width: 0;
+          height: 0;
+          cursor: pointer;
+
+          &::after {
+            content: "△";
+            position: absolute;
+            top: -37px;
+            left: -42px;
+            font-size: 45px;
+            color: rgba(33, 33, 33, 0.2);
+          }
+        }
+      }
+    }
+
+    .filter__decre {
+      margin-bottom: 4px;
+    }
+
+    .search-result__products {
+      margin-top: 44px;
+
+      .search-result__product {
+        margin-bottom: 44px;
+      }
+    }
+  }
+}
